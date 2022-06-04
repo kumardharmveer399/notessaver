@@ -114,7 +114,7 @@ div.padding20 {
 .youtube {
     margin-left: 5vw;
     display: grid;
-    grid-template-columns: 30% 50%;
+    grid-template-columns: 50% 50%;
 }
 .youtube .card-body{
     font-family: sans-serif;
@@ -126,6 +126,12 @@ div.padding20 {
     display: flex;
     flex-direction: row;
     margin-left: 10vw;
+}
+.card-title{
+    font-size: 15px;
+}
+.card p{
+    font-size: 12px;
 }
 .blogcard div{
     margin-left: 50px;
@@ -204,4 +210,22 @@ footer {
 .copyright{
     color: lightslategrey;
     font-size: 12px;
+}
+@media (max-width : 700px){
+    .blogcard{
+        flex-direction: column;
+    }
+    .blogcard .card{
+        margin-top: 2vh;
+    }
+    .blogcard .card .card-body{
+        width: 50vw;
+    }
+    .blogcard .card img{
+        height: 50vh;
+        width: 60vw;
+    }
+    .youtube iframe{
+        width: 50vw;
+    }
 }
